@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    background-image: url('../Autism1.jpeg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+
+header {
+    background-color: #a1231b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.left-image {
+    width: 80px; /* Adjust width of the image */
+    height: auto; /* Automatically adjust height based on width */
+    position: absolute; /* Position the image absolutely */
+    top: 8%; /* Place the image at the top of the header */
+    left: 20px; /* Adjust left position to place the image at the leftmost corner */
+    transform: translateY(-50%); /* Center the image vertically */
+}
+
+.user-icon {
+    width: 50px; /* Adjust width of the icon */
+    height: auto; /* Automatically adjust height based on width */
+    position: absolute; /* Position the icon absolutely */
+    top: 7%; /* Place the icon at the top of the header */
+    right: 20px; /* Adjust right position to place the icon at the rightmost corner */
+    transform: translateY(-50%); /* Center the icon vertically */
+}
+
+.space-words {
+    word-spacing: 10px; /* Adjust the spacing value as needed */
+}
+
+
+nav {
+    background-color: #f3d250;
+}
+
+.download-icon {
+    width: 30px; /* Adjust width of the icon */
+    height: auto; /* Automatically adjust height based on width */
+    position: absolute; /* Position the icon absolutely */
+    top: 19%; /* Place the icon at the top of the header */
+    right: 20px; /* Adjust right position to place the icon at the rightmost corner */
+    transform: translateY(-50%); /* Center the icon vertically */
+}
+
+.star-icon {
+    width: 30px; /* Adjust width of the icon */
+    height: auto; /* Automatically adjust height based on width */
+    position: absolute; /* Position the icon absolutely */
+    top: 19%; /* Place the icon at the top of the header */
+    right: 70px; /* Adjust right position to place the icon at the rightmost corner */
+    transform: translateY(-50%); /* Center the icon vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.image-preview {
+    width: 95px; /* Adjust width of the icon */
+    height: auto; /* Automatically adjust height based on width */
+    position: absolute; /* Position the icon absolutely */
+    top: 40%; /* Place the icon at the top of the header */
+    left: 250px; /* Adjust right position to place the icon at the rightmost corner */
+    transform: translateY(-50%); /* Center the icon vertically */
+}
+
+
+.vertical-line {
+    width: 2px; /* Width of the vertical line */
+    height: 100vh; /* Height of the line equal to viewport height */
+    background-color: orangered; /* Color of the line */
+    position: absolute; /* Position it absolutely */
+    left: 50%; /* Place it at the center horizontally */
+    top: 2; /* Align it to the top */
+    transform: translateX(-50%); /* Move it back by 50% of its own width */
+}
+
+main {
+    display: flex; /* Use flexbox to arrange sections horizontally */
+    background-color: none;
+    width: 100%;
+}
+
+.form-section,
+.prediction-section {
+    flex: 1; /* Each section occupies equal width */
+    padding: 20px;
+    margin: 10px;
+}
+
+.form-section {
+    border-right: 1px solid whitesmoke; /* Add right border to form section */
+}
+
+#submit-button {
+    margin-top: 30px;
+}
+
+.description textarea {
+    width: 90%;
+    height: 300px;
+    resize: none;
+}
+
+.webcam {
+    width: 420px; /* Set width to 420px */
+    height: 340px; /* Set height to 340px */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin: auto; /* Center webcam container horizontally */
+    position: relative; /* Position webcam container */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Additional CSS styles */
+.webcam video {
+    width: 100%; /* Set video width to fill webcam container */
+    height: 100%; /* Set video height to fill webcam container */
+    object-fit: cover; /* Maintain aspect ratio and cover webcam container */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px; /* Add space between buttons and webcam */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin-right: 10px; /* Add space between buttons */
+}
+
+.button-container button:last-child {
+    margin-right: 0; /* Remove margin from last button */
+}

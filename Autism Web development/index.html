@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Disorder Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <header>
+        <img src="../DSU.jpeg" alt="Left Image" class="left-image">
+        <h1>Autism Disorder Detector</h1>
+        <img src="../user.png" alt="User Icon" class="user-icon">
+        <marquee class="space-words">DAYANANDA SAGAR UNIVERSITY </marquee>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Autism_spectrum">ASD</a></li>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">About Us</a></li>
+            <img src="../download.jpg" alt="Download" class=" download-icon">
+            <img src="../star.jpg" alt="Download" class=" star-icon">
+        </ul>
+    </nav>
+    <div class="vertical-line"></div>
+    <main>
+        <section class="form-section">
+            <h2>Check whether an individual is Autistic or Not below:</h2>
+            <br>
+            <input type="file" id="fileInput">
+            <button onclick="displayFileStatus()">Submit</button>
+            <p id="fileStatus"></p>
+            <p id="fileName"></p>
+            <img id="fileImage" style="max-width: 300px; max-height: 300px;">
+
+            <div id="result"></div>
+        </section>
+        <section class="prediction-section">
+            <h2>Webcam:</h2>
+            <div class="webcam" id="webcam"></div>       
+            <div class="button-container">
+                <button id="capture-btn">Capture</button>
+                <button id="retake-btn">Retake</button>
+            </div>
+            <p> Prediction: Non-Autistic</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
